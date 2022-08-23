@@ -1,0 +1,59 @@
+@import "../../index.scss";
+
+.main {
+    color: #F2F4F7;
+    max-width: 592px;
+    margin: 0 auto;
+    text-align: center;
+
+
+    &__title {
+        font-size: 72px;
+        line-height: 83px;
+        margin-bottom: 32px;
+
+        @include mobile {
+            font-size: 48px;
+            line-height: 60px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__description {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 80px;
+
+        @include mobile {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 55px;
+        }
+    }
+
+    &__button {
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(45deg, #FC4060, #8061FD);
+        font-size: 18px;
+        margin-bottom: 64px;
+        padding: 16px 90px;
+        background-color: transparent;
+        border: 2px solid;
+        border-image: linear-gradient(45deg, #FC4060, #8061FD);
+        border-image-slice: 1;
+         
+        @include mobile {
+            font-size: 14px;
+            padding: 14px 60px;
+        }
+    }
+
+    &__dot {
+        margin-right: 32px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
